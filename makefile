@@ -1,7 +1,7 @@
 CC          = g++
 CFLAGS      = -std=c++20 -Wall -Werror -Werror -pedantic
-INCLUDE_DIR = -IC:\mingw_dev_lib\sdl2\include\SDL2 -IC:\mingw_dev_lib\sdl2_image\include\SDL2 -IC:\mingw_dev_lib\sdl2_ttf\include\SDL2
-LDFLAGS     = -LC:\mingw_dev_lib\sdl2\lib -LC:\mingw_dev_lib\sdl2_image\lib -LC:\mingw_dev_lib\sdl2_ttf\lib
+INCLUDE_DIR = -I.\thirdparty\sdl2\include\SDL2 -I.\thirdparty\sdl2_image\include\SDL2 -I.\thirdparty\sdl2_ttf\include\SDL2
+LDFLAGS     = -L.\thirdparty\sdl2\lib -L.\thirdparty\sdl2_image\lib -L.\thirdparty\sdl2_ttf\lib
 LDLIBS      = -lmingw32 -lSDL2main -lSDL2 -lSDL2_image -lSDL2_ttf
 RM          = del /f
 
